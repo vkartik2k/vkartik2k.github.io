@@ -3,4 +3,10 @@ body, html{
     height: 100%;
     width: 100%;
     background-color: blue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32pt;
+    font-weight: 600;
 }
+ span{
+    transform: scale(0.2,1);
+ }

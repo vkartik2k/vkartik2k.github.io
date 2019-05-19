@@ -46,6 +46,10 @@ body, html{
     background-color: rgb(43, 43, 43);
 }
 
+#mainNameInner{
+    display: inline-block;
+}
+
 @media(max-width: 600px) {
     #mainName{
         font-size: 70px;

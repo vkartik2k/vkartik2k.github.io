@@ -6,22 +6,49 @@ body, html{
     background-color: rgb(236, 236, 236);
 }
 
-#nameDisplay{
+#mainDisplay1{
     height: 100%;
     width: 100%;
-    background-color: rgb(56, 56, 56);
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color:rgb(240, 240, 240);
-    padding-top: 250px;
+    background-image: url("./backgroundImg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding:50px;
 }
 
-#myName{
-    font-size: 80px;
-    font-weight: bold;
-}
-
-#space{
-    height: 1000px;
+#backgroundBlur1{
+    height: 100%;
     width: 100%;
+    background-image: url("./innerBackgroundImg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+    text-align: center;
+}
+
+#mainName{
+    display: inline-block;
+    padding-top: 100px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    opacity: 1;
+    cursor: default;
+}
+
+#mainNameLine{
+    width: 40%;
+    height: 5px;
+    outline: none;
+    border:none;
+    background-color: rgb(43, 43, 43);
+}
+
+@media(max-width: 600px) {
+    #mainName{
+        font-size: 70px;
+    }
+
 }

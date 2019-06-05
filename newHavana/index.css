@@ -44,6 +44,7 @@ body, html{
 }
 
 #sliderContent{
+    /* background-color: brown; */
     width: 100%;
     box-sizing: border-box;
     padding: 30px;
@@ -60,9 +61,13 @@ body, html{
     font-size: 20px;
     font-weight: 600;
     width: 80%;
-    border-bottom: 1px solid black;
 }
+#borderLight{
+    height: 1px;
+    width: 80%;
+    background-color: black;
 
+}
 #borderHeavy{
     height: 5px;
     width: 80px;
@@ -74,6 +79,7 @@ body, html{
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: 'Ubuntu';
+    text-align: justify;
 }
 
 .sliderBtn{
@@ -109,7 +115,15 @@ body, html{
         text-align: center;
         padding-top: 0px;
         padding-bottom: 0px;
+        margin-bottom: 35px;
+        margin-top: 35px;
         box-sizing: border-box;
         border-right: 0px;
     }
+    #scContent{
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
 }

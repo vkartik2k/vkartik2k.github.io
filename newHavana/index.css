@@ -91,4 +91,25 @@ body, html{
     #sliderSection{
         display: block;
     }
+    #loadingImg{
+        width: 100%;
+    }
+    .realImage{
+        width: 90%;
+        height: auto;
+    }
+    .subHeading{
+        margin: 0px;
+        text-align: center;
+        padding: 0px;
+    }
+    #sliderImage{
+        /* background-color: aqua; */
+        width: 100%;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        box-sizing: border-box;
+        border-right: 0px;
+    }
 }

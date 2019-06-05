@@ -2,7 +2,7 @@ body, html{
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.486);
+    background-color: rgba(245, 245, 245, 0.24);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -83,6 +83,7 @@ body, html{
     padding-bottom: 50px;
     font-family: 'Ubuntu';
     text-align: justify;
+    height: 120px;
 }
 
 .sliderBtn{
@@ -91,6 +92,7 @@ body, html{
     width: 35px;
     margin-right: 10px;
     background-color: rgb(179, 179, 179);
+    cursor: pointer;
 }
 
 .selected{

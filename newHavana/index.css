@@ -6,8 +6,11 @@ body, html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#loading{
+::-webkit-scrollbar {
     display: none;
+}
+
+#loading{
     position: absolute;
     top:0;
     left:0;
@@ -18,7 +21,6 @@ body, html{
     text-align: center;
     padding-top: 240px;
     box-sizing: border-box;
-      
 }
 
 .subHeading{
@@ -114,7 +116,6 @@ body, html{
         padding: 0px;
     }
     #sliderImage{
-        /* background-color: aqua; */
         width: 100%;
         text-align: center;
         padding-top: 0px;
@@ -129,5 +130,4 @@ body, html{
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    
 }

@@ -194,9 +194,6 @@ body, html{
     #sliderSection{
         display: block;
     }
-    #loadingImg{
-        width: 100%;
-    }
     .realImage{
         width: 90%;
         height: auto;

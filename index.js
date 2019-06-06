@@ -3,18 +3,18 @@ $(function () {
     $("#backgroundBlur1").hide()
     $("#downBtn").hide()
     $("#loading").addClass("animated slideOutUp")
-  },1500)
+  },2500)
   setTimeout(function(){
     $("#backgroundBlur1").show()
     $('#backgroundBlur1').addClass("animated fadeIn")
-  },1800)
+  },2800)
   setTimeout(function(){
     $("#downBtn").show()
     $('#downBtn').addClass("animated jackInTheBox")
-  },2600)
+  },3600)
   setTimeout(function(){
     $("#downBtn").removeClass('animated jackInTheBox');
-  },3000)
+  },4000)
 
     var $window = $(window), win_height_padded = $window.height() * 1.1, isTouch = Modernizr.touch;
     

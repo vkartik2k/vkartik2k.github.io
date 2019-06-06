@@ -1,192 +1,254 @@
-html, body{
-    height: 100%;
-    width : 100%;
-    margin: 0px;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#back{
+body, html{
+    margin: 0;
     height: 100%;
     width: 100%;
-    background-image: url("Group 55.png");
-    background-repeat: no-repeat;
-    background-color: #3E3E3E;
-    background-size: cover; 
-    
+    background-color: rgba(245, 245, 245, 0.24);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
-
-#maintext{
-    font-size: 3.8vw;
-    color: white;
-    padding-top:16%;
-    padding-left: 96px;
-}
-
-
-#resume{
-    color:#3FFCDC;
-    font-size: 23px;
-    margin-top: 30px;
-    margin-left: 100px;
-    background-color: transparent;
-    outline: 0;
-    border: solid 2px #3FFCDC;
-    height: 40px;
-    width: 120px;
-    border-radius: 2px;
-}
-
-
-#resume:hover{
-    background-color:#3FFCDC;
-    color: #373737;
-
-}
-
-#about{
-    width: 100%;
-    /* background-color: aqua; */
-    margin-top:90px;
-    margin-bottom: 90px;
-}
-
-.head1{
-
-    font-size:45px;
-    font-weight: lighter;
-    color : #744848;
-}
-
-.line{
-    width: 40%;
-    border-top: 1px solid;
-    margin-top:18px;
-    color: #B10303;
-    
-}
-
-#aboutcontent{
-    font-size: 22px;
-    text-align: justify;
-    width: 63%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 53px;
-
-}
-
-.pimage{
-    width:50%;
-    
-    display: inline-block;
-    margin: 0px;
-    margin-top: 35px;
-    text-align: justify;
-}
-
-.pcontent{
-    width:44%;
-    height:300px;
-    
-    display: inline-block;
-    margin: 0px;
-    margin-top: 35px;
-    font-size: 22px;
-    text-align: justify;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 30px;
-    
-
-}
-.pimage1{
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    margin-top:20px;
-    display: block;
-}
-
-#projects{
-    display: flex;
-    flex-wrap: wrap;
-}
-.phead{
-    font-size:32px;
-    color : #2B0000;
-
-
-}
-#d1{
+::-webkit-scrollbar {
     display: none;
 }
 
-#contact{
-    background-image: url("c.png");
+#loading{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index:100;
+    text-align: center;
+    padding-top: 240px;
+    box-sizing: border-box;
+}
+
+#mainDisplay1{
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/backgroundImg1.jpg");
     background-repeat: no-repeat;
-    background-color: #EEEEEE;
-    width:100%;
-    height :300px;
-    margin-top: 50px;
+    background-size: cover;
+    box-sizing: border-box;
+    padding:50px;
 }
 
-#ccontact{
-    font-size: 22px;
-    margin-top: 80px;
-
+#backgroundBlur1{
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/innerBackgroundImg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+    text-align: center;
 }
 
-@media (max-width: 600px) {
-    #maintext{
-        font-size: 230%;
-    
-        padding-top:32vh;
-        padding-left: 10px;
-    }
-    #aboutcontent {
-      width:80%;
-    }
-    .line{
-        width: 65%;
+#mainName{
+    display: inline-block;
+    padding-top: 100px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    opacity: 1;
+    cursor: default;
+}
 
+#mainNameLine{
+    width: 40%;
+    height: 5px;
+    outline: none;
+    border:none;
+    background-color: rgb(43, 43, 43);
+}
+#mainPost{
+    display: inline-block;
+    padding-top: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    opacity: 1;
+    cursor: default;
+}
+
+#downBtn{
+    margin-top: 160px;
+    cursor: pointer;
+}
+
+.subHeading{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+#aboutMeContent{
+    width: 60%;
+    text-align: justify;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+#sliderSection{
+    display: flex;
+    align-items:center;
+    padding-bottom: 55px;
+    margin-top:20px;
+}
+
+#sliderBtnPannel{
+    min-width: 150px;
+    height: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#sliderImage{
+    width: 100%;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+
+#sliderContent{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.realImage{
+    height: 200px;
+    -webkit-box-shadow: 0px 0px 139px -20px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 139px -20px rgba(0,0,0,0.21);
+    box-shadow: 0px 0px 139px -20px rgba(0,0,0,0.21);
+}
+
+#scHeader{
+    font-size: 20px;
+    font-weight: 600;
+    width: 80%;
+}
+#borderLight{
+    height: 1px;
+    width: 80%;
+    background-color: black;
+
+}
+#borderHeavy{
+    height: 5px;
+    width: 80px;
+    background-color: black;
+}
+
+#scContent{
+    width: 60%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Ubuntu';
+    text-align: justify;
+    height: 120px;
+}
+
+.sliderBtn{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 138px;
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+.selected{
+    background-color: rgb(41, 41, 41);
+}
+
+#contactContainer{
+    background-color: rgb(109, 109, 109);
+}
+
+#contactMe{
+    background-color: rgb(109, 109, 109);
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 60px; 
+
+}
+@media(max-width:640px){
+    #mainName{
+        font-size: 70px;
     }
-    .pimage{
-        width:100%;
-        padding-bottom: 20px;
+    #loading{
+        padding-top: 200px;
+    }
+    #sliderSection{
+        display: block;
+    }
+    #loadingImg{
+        width: 100%;
+    }
+    .realImage{
+        width: 90%;
         height: auto;
     }
-    .pcontent{
-        width:100%;
-        padding-left: 5%;
-        padding-right: 5%;
-    
-    }
-    #d1{
-        display: block;
+    .subHeading{
+        margin: 0px;
+        text-align: center;
+        padding: 0px;
+        padding-top: 23px;
 
     }
-    #d2{
-        display: none;
+    #sliderImage{
+        width: 100%;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 35px;
+        margin-top: 35px;
+        box-sizing: border-box;
+        border-right: 0px;
     }
-    .pimage1{
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
+    #scContent{
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
-    #ccontact{
-        margin-top: 40px;
-    
+    #downBtn{
+        margin-top: 105px;
     }
-    #resume{
-        margin-top: 30px;
-        margin-left: 20px;
-        margin-bottom: 100px;
+
+    #sliderBtnPannel{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+
     }
-    #back{
-        /* height: auto; */
-        background-image: url("a.png");
-        
+    .sliderBtn{
+        display: block;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-  }
+
+    #aboutMeContent{
+        width: 85%;
+        text-align: justify;
+        margin: auto;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+

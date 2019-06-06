@@ -4,81 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
     <title>Kartik Verma</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
-    <div id="back">
-        <div id="maintext">"Hi,<br>
-            &nbsp;I'm Kartik Verma,<br>
-            &nbsp;Sport Programmer."
-        </div>
-        <a href="Kartik_Resume.pdf" download><button id="resume">RESUME</button> </a>
+    <div id="loading">
+        <img src="./img/loading-3.gif" height="200px" id="loadingImg">
     </div>
-    <div id="about">
-        <center>
-            <div class="head1">About</div>
-        </center>
-        <hr class="line">
-        <div id="aboutcontent">
-            Kartik Verma is a first year student at Delhi Technological University in Delhi, India with majors in computer science. He is passionate about Competitive programming and web development. He is usually seen practicing his programming skills on various sport programming websites and creating front-end websites for fun.
+    <div id="mainDisplay1">
+        <div id="backgroundBlur1">
+            <span id="mainName">
+                Kartik Verma
+            </span>
+            <hr id="mainNameLine">
+            <span id="mainPost">Web Developer_</span>
+            <br>
+            <a href="#shAboutMe"><img src="img/downBtn.png" id="downBtn"></a>
         </div>
     </div>
-    <center>
-        <div class="head1">Projects</div>
-    </center>
-    <hr class="line">
-    <div id="projects">
-        
-        <div class="pimage">
-            <img src="project1.png" class="pimage1">
-
+    <div class="subHeading" id="shAboutMe">ABOUT ME</div>
+    <div id="aboutMeContent" class="revealOnScroll" data-animation="slideInUp" data-timeout="0" >
+            Hi, I am Kartik Verma currently pursuing my B.Tech. from Delhi Technological University with majors in Computer Engineering. I love to create websites and practice competitive programming on various website like Codechef, Codeforces, HackerRank, etc. I create websites using React.js and Node.js. I love to use MySQL and Firebase for the database services.<br><br><br> Codechef Handle : <a href="https://www.codechef.com/users/vkartik2k">vkartik2k</a><br>
+            Github Handle : <a href="https://github.com/vkartik2k">vkartik2k</a><br><br>
+    </div>
+    <div class="subHeading" id="shProject">PROJECTS</div>
+    <div id="sliderSection" >
+        <div id="sliderBtnPannel" class="revealOnScroll" data-animation="slideInLeft">
+            <div class="sliderBtn selected" id="0"></div>
+            <div class="sliderBtn" id="1"></div>
+            <div class="sliderBtn" id="2"></div>
+            <div class="sliderBtn" id="3"></div>
+        </div>
+        <div id="sliderImage" class="revealOnScroll" data-animation="slideInLeft" data-timeout="0">
+            <img src="./img/project1.png" class="realImage">
         </div><!--
-        --><div class="pcontent">
-            <center><spam class="phead">TicTacToeOnline</spam></center>
-                <br><br>
- 
-                TicTacToeOnline is an user vs computer game of Tic Tac Toe made in form of website. This uses minmax algorithm with a slight variation so that the user gets equal change of beating the computer.
-                <br>
-                Link - <a href='/TicTacToeOnline/'>Click Here</a>
+        --><div id="sliderContent" class="revealOnScroll" data-animation="slideInRight" >
+            <div id="scHeader" >TIC-TAC-TOE-ONLINE</div>
+            <div id="borderLight"></div>
+            <div id="borderHeavy"></div>
+            <div id="scContent">
+                    TicTacToeOnline is an user vs computer game of Tic Tac Toe made in form of website. This uses minmax algorithm with a slight variation so that the user gets equal change of beating the computer.<br><br> Link - <a href="https://www.kartikverma.tech/TicTacToeOnline/">www.kartikverma.tech/TicTacToeOnline</a>
+            </div>
         </div>
-        <div class="pimage" id="d1">
-                <img src="project2.png" class="pimage1" >
-                
+
+    </div>
+
+    <div id="contactContainer">
+        <div class="subHeading" id="shContact">Contact Me</div>
+        <div id="contactMe" class="revealOnScroll" data-animation="slideInUp" data-timeout="0">Feel free to contact me at vkartik2k@gmail.com</div>
+    </div>
     
-        </div><!--
-        --><div class="pcontent">
-                <center><spam class="phead">Mango - Cipher</spam></center>
-                <br>
-                <br>
- 
-                This is a software(unlicensed) which encrypts and decrypts text files. This is coded in python using PyQt4 library and successfully converted into executable file. This uses self made encryption algorithm which makes it very difficult to crack.
-        </div><!--
-        --><div class="pimage" id="d2">
-            <img src="project2.png" class="pimage1" >
-        </div><div class="pimage" id="d3">
-            <img src="project3.png" class="pimage1" >
-        </div><div class="pcontent">
-                <center><spam class="phead">E-Commerce Website</spam></center>
-                <br>
-                <br>
-                Made an e-commerce website for sale of fashion related products. Options of filter and search product are also implemented along with basic features like view product, add to cart, add to wishlist. Products can be added, modified, removed with admin pannel.
-                <a href="https://github.com/vkartik2k/e-commerce-website">Github Link</a>
-        </div><!--
-        -->
 
-    </div>
-    <div id='contact'>
-        <br>
-        <br>
-            <center>
-                <div class="head1">Contact</div>
-            </center>
-            <hr class="line">
-            <center id="ccontact">
-                    Feel free to contact me at <a href="mailto:vkartik2k@gmail.com?Subject=Whats%20up!" target="_top">vkartik2k@gmail.com</a>
-            </center>
-    </div>
+    <!-- JS FILES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+
 </body>
 </html>

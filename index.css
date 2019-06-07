@@ -3,7 +3,7 @@ body, html{
     height: 100%;
     width: 100%;
     background-color: rgba(245, 245, 245, 0.24);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';
     scroll-behavior: smooth;
 }
 
@@ -12,35 +12,35 @@ body, html{
 }
 
 #loading{
+    box-sizing: border-box;
     position: absolute;
     top:0;
     left:0;
     height: 100%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    z-index:100;
-    text-align: center;
     padding-top: 240px;
-    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    z-index:100;
 }
 
 #mainDisplay1{
     height: 100%;
     width: 100%;
+    padding:50px;
     background-image: url("./img/backgroundImg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    padding:50px;
 }
 
 #backgroundBlur1{
+    box-sizing: border-box;
     height: 100%;
     width: 100%;
     background-image: url("./img/innerBackgroundImg1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    box-sizing: border-box;
     background-position: center;
     text-align: center;
 }
@@ -48,29 +48,28 @@ body, html{
 #mainName{
     display: inline-block;
     padding-top: 100px;
+    color: rgb(43, 43, 43);
     font-family: 'Segoe UI', sans-serif;
     font-size: 90px;
     font-weight: 600;
-    color: rgb(43, 43, 43);
-    opacity: 1;
     cursor: default;
 }
 
 #mainNameLine{
     width: 40%;
     height: 5px;
+    background-color: rgb(43, 43, 43);
     outline: none;
     border:none;
-    background-color: rgb(43, 43, 43);
 }
+
 #mainPost{
     display: inline-block;
     padding-top: 10px;
+    color: rgb(43, 43, 43);
     font-family: 'Segoe UI', sans-serif;
     font-size: 30px;
     font-weight: 600;
-    color: rgb(43, 43, 43);
-    opacity: 1;
     cursor: default;
 }
 
@@ -80,48 +79,48 @@ body, html{
 }
 
 .subHeading{
+    padding-left: 100px;
     padding-top: 70px;
     padding-bottom: 50px;
-    padding-left: 100px;
     font-size: 30px;
     font-weight: 700;
 }
 
-
 #aboutMeContent{
     width: 60%;
-    text-align: justify;
-    margin: auto;
-    font-size: 20px;
     margin-bottom: 60px;
     margin-top: 60px;
+    margin: auto;
+    font-size: 20px;
+    text-align: justify;
 }
+
 #sliderSection{
     display: flex;
-    align-items:center;
     padding-bottom: 55px;
     margin-top:20px;
+    align-items:center;
 }
 
 #sliderBtnPannel{
-    min-width: 150px;
-    height: 400px;
     display: flex;
     flex-direction: column-reverse;
+    width: 150px;
+    height: 400px;
 }
 
 #sliderImage{
+    box-sizing: border-box;
     width: 100%;
-    text-align: center;
     padding-top: 120px;
     padding-bottom: 120px;
-    box-sizing: border-box;
+    text-align: center;
     border-right: 1px solid rgb(204, 204, 204);
 }
 
 #sliderContent{
-    width: 100%;
     box-sizing: border-box;
+    width: 100%;
     padding: 30px;
 }
 
@@ -133,16 +132,17 @@ body, html{
 }
 
 #scHeader{
+    width: 80%;
     font-size: 20px;
     font-weight: 600;
-    width: 80%;
 }
+
 #borderLight{
     height: 1px;
     width: 80%;
     background-color: black;
-
 }
+
 #borderHeavy{
     height: 5px;
     width: 80px;
@@ -150,21 +150,21 @@ body, html{
 }
 
 #scContent{
+    height: 120px;
     width: 60%;
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: 'Ubuntu';
     text-align: justify;
-    height: 120px;
 }
 
 .sliderBtn{
     display: inline-block;
     height: 12px;
     width: 12px;
-    border-radius: 15px;
     margin-top: 20px;
     margin-left: 138px;
+    border-radius: 6px;
     background-color: rgb(179, 179, 179);
     cursor: pointer;
 }
@@ -174,78 +174,84 @@ body, html{
 }
 
 #contactContainer{
-    background-color: rgb(109, 109, 109);
+    background-color: rgb(167, 167, 167);
 }
 
 #contactMe{
-    background-color: rgb(109, 109, 109);
-    text-align: center;
-    font-size: 20px;
     padding-bottom: 60px; 
-
+    font-size: 20px;
+    text-align: center;
 }
+
 @media(max-width:640px){
-    #mainName{
-        font-size: 70px;
-    }
     #loading{
         padding-top: 200px;
     }
+    
+    .subHeading{
+        margin: 0px;
+        padding: 0px;
+        padding-top: 23px;
+        text-align: center;
+    }
+
+    #mainName{
+        font-size: 70px;
+    }
+    
+    #downBtn{
+        margin-top: 85px;
+    }
+    
+    #aboutMeContent{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
     #sliderSection{
         display: block;
     }
-    .realImage{
-        width: 90%;
+
+    #sliderBtnPannel{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
         height: auto;
-    }
-    .subHeading{
-        margin: 0px;
-        text-align: center;
-        padding: 0px;
-        padding-top: 23px;
+        justify-content:center;
 
     }
+    
     #sliderImage{
+        box-sizing: border-box;
         width: 100%;
-        text-align: center;
         padding-top: 0px;
         padding-bottom: 0px;
         margin-bottom: 35px;
         margin-top: 35px;
-        box-sizing: border-box;
         border-right: 0px;
+        box-sizing: border-box;
     }
+
+    .realImage{
+        width: 90%;
+        height: auto;
+    }
+
     #scContent{
         width: 100%;
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    #downBtn{
-        margin-top: 85px;
-    }
 
-    #sliderBtnPannel{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
-
-    }
     .sliderBtn{
         display: block;
         margin-top: 20px;
         margin-left: 10px;
         margin-right: 10px;
-    }
-
-    #aboutMeContent{
-        width: 85%;
-        text-align: justify;
-        margin: auto;
-        font-size: 20px;
-        margin-bottom: 10px;
-        margin-top: 10px;
     }
 }
 
